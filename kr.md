@@ -7,22 +7,14 @@ where products.category != 'clothing';
 ```
 
 # 4
-## Самая низкая цена
-```sql
-select category, avg(price)
-from products
-group by category
-order by avg 
-limit 1
-```
-## Самая высокая цена
 ```sql
 select category, avg(price)
 from products
 group by category
 order by avg desc
-limit 1
+limit 3
 ```
+
 # 5
 ```sql
 select * from orders
